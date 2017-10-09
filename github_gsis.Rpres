@@ -1,0 +1,142 @@
+Getting started with GitHub
+========================================================
+author: Lucas Nell
+date: 11 Oct 2017
+autosize: true
+font-family: Helvetica Neue
+
+<small>`lucasnell.com/github_gsis`</small>
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+
+
+Goals
+========================================================
+
+1. Connect git to GitHub
+2. Connect GitHub to RStudio
+3. Familiarize with creating repositories
+4. Do all the primary command line stuff now so you don't have to later
+
+
+Prerequisites
+========================================================
+
+- git
+- GitHub account
+- R and RStudio
+
+
+Setting global git options
+========================================================
+
+Set global defaults for name and email.
+Make sure the email below is the one you use for your GitHub account
+
+```{bash}
+git config --global user.name 'John Doe'
+git config --global user.email 'john@doe.com'
+```
+
+Output from this command...
+```{bash}
+git config --global --list
+```
+... should include this:
+```{bash}
+user.name=John Doe
+user.email=john@doe.com
+```
+
+
+Connecting securely to GitHub using SSH
+========================================================
+
+First, check if you already have an SSH key
+
+From R:
+```{r}
+file.exists("~/.ssh/id_rsa.pub")
+# Windows:
+# file.exists("C:/Users/USERNAME/.ssh/id_rsa")
+```
+
+If `FALSE`, you need to make a public key first...
+
+Making and viewing key
+==========
+
+<img src="http://r-pkgs.had.co.nz/screenshots/git-config-2.png" height="500" width="500">
+<small>from `http://r-pkgs.had.co.nz/git.html#git-init`</small>
+
+Adding key to GitHub
+====================
+
+Login to `github.com` in a web browser
+
+Go to `https://github.com/settings/ssh`
+
+<img src="img/new_ssh.png" height="50" width="171">
+
+Enter a descriptive title (e.g., "Personal MacBook Pro")
+
+Paste your key into the "Key" box
+
+<img src="img/add_ssh.png" height="50" width="163">
+
+
+Create a new repository
+========================================================
+type: section
+
+1. Initiate new repository
+2. Describe and create repository
+3. 
+
+
+
+
+
+
+
+
+
+
+
+```{r include = FALSE}
+# For generating ridiculous file directory
+dir.create("~/Desktop/my_analyses")
+for (f in 1:20) {
+    p <- sample(c('analysis', 'plots', 'data_stuff'), 1, prob = c(0.5, 0.25, 0.25))
+    d <- sample(seq(as.Date('1999/01/01'), Sys.Date(), by="day"), 1)
+    v <- sample.int(10, 1)
+    fn <- sprintf("~/Desktop/my_analyses/%s_v%i_%s.R", p, v, format(d, '%Y-%m-%d'))
+    file.create(fn)
+}
+```
+
+
+
+
+
+
+
+<!---
+Credits
+========================================================
+
+![command line](http://happygitwithr.com/img/command-line-git-screenshot.png)
+
+![git ide](http://happygitwithr.com/img/sourcetree-screenshot.png)
+
+- [GitKraken](https://www.gitkraken.com/)
+- [SourceTree](http://www.sourcetreeapp.com/)
+
+
+Connecting to GitHub through command line: 
+`http://happygitwithr.com/push-pull-github.html`
+
+-->
+
