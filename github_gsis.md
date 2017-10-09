@@ -5,7 +5,11 @@ date: 11 Oct 2017
 autosize: true
 font-family: Helvetica Neue
 
+
+
 <small>`lucasnell.com/github_gsis`</small>
+
+
 
 
 
@@ -27,8 +31,11 @@ Prerequisites
 - R and RStudio
 
 
+
 Setting global git options
 ========================================================
+
+In RStudio, `Tools` > `Shell...`
 
 Set global defaults for name and email.
 Make sure the email below is the one you use for your GitHub account
@@ -76,7 +83,7 @@ Making and viewing key
 Adding key to GitHub
 ====================
 
-Login to `github.com` in a web browser
+Login to `github.com` in web browser
 
 Go to `https://github.com/settings/ssh`
 
@@ -89,46 +96,80 @@ Paste your key into the "Key" box
 <img src="img/add_ssh.png" height="50" width="163">
 
 
-Create a new repository
-========================================================
-type: section
-
-1. Initiate new repository
-2. Describe and create repository
-3. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!---
-Credits
+Initiate new repository
 ========================================================
 
-![command line](http://happygitwithr.com/img/command-line-git-screenshot.png)
+<div>
+From <code>github.com</code>:
+<img src="img/new_repo.png" height="50" width="200" style="vertical-align: middle">
+</div>
 
-![git ide](http://happygitwithr.com/img/sourcetree-screenshot.png)
+From profile page:
 
-- [GitKraken](https://www.gitkraken.com/)
-- [SourceTree](http://www.sourcetreeapp.com/)
+<img src="img/new_repo2.png" height="150" width="852">
 
 
-Connecting to GitHub through command line: 
-`http://happygitwithr.com/push-pull-github.html`
+Describe and create new repository
+========================================================
 
--->
+<img src="img/new_repo_info.png" height="640" width="776">
 
+
+Clone repository in RStudio
+========================================================
+
+`File` > `New Project` > `Version Control` > `Git`
+
+<img src="img/clone_repo.png" height="545" width="766">
+
+
+Make local changes
+========================================================
+
+If just using a test repo, edit the `README.md` file and save changes.
+
+If wanting to move a directory over to GitHub, copy those files into the 
+new repository's folder
+
+
+Commit and Push
+========================================================
+
+
+- Under "Git" tab, checked "Staged" for file(s) that you changed or added
+- Hit "Commit"
+- Add _useful_ commit message
+<div align="left">
+<img src="https://imgs.xkcd.com/comics/git_commit.png">
+</div>
+- Hit "Commit"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Credits -->
+<!-- ======================================================== -->
+
+<!-- ![command line](http://happygitwithr.com/img/command-line-git-screenshot.png) -->
+
+<!-- ![git ide](http://happygitwithr.com/img/sourcetree-screenshot.png) -->
+
+<!-- - [GitKraken](https://www.gitkraken.com/) -->
+<!-- - [SourceTree](http://www.sourcetreeapp.com/) -->
+
+
+<!-- Connecting to GitHub through command line:  -->
+<!-- `http://happygitwithr.com/push-pull-github.html` -->
+
+
+<!-- 'https://image.slidesharecdn.com/2-git-dag-150928235519-lva1-app6891/95/2-git-dag-14-638.jpg' -->
