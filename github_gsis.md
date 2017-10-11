@@ -1,14 +1,15 @@
 Getting started with GitHub
 ========================================================
-author: Lucas Nell
+author: Lucas Nell < lucas@lucasnell.com >
 date: 11 Oct 2017
 autosize: true
 font-family: Helvetica Neue
 css: custom.css
 
 
-
-<small>`lucasnell.com/github_gsis`</small>
+<small>
+Presentation available at `lucasnell.com/github_gsis`
+</small>
 
 
 
@@ -17,8 +18,9 @@ Why use git and GitHub?
 ========================================================
 left: 50%
 
-<img src="http://phdcomics.com/comics/archive/phd101212s.gif">
-
+<div>
+<img src="http://phdcomics.com/comics/archive/phd101212s.gif" height="640" width="480">
+</div>
 ***
 
 - Collaborating with a team
@@ -135,9 +137,12 @@ From profile page:
 
 Describe and create new repository
 ========================================================
+class: smaller
 
-<img src="img/new_repo_info.png" height="640" width="776">
+<img src="img/new_repo_info.png" height="502" width="776">
 
+<span style="color: red;font-weight: bold;">\*</span>
+If not using R, leave at "None" or change to language you're using
 
 
 Clone repository in RStudio
@@ -161,10 +166,11 @@ Commit and Push
 ========================================================
 
 
-- Under "Git" tab, checked "Staged" for file(s) that you changed or added
-- Hit "Commit"
-- Add useful commit message
-- Hit "Commit" again
+1. Under "Git" tab, checked "Staged" for file(s) that you changed or added
+2. Hit "Commit"
+3. Add useful commit message
+4. Hit "Commit" again
+5. Hit "Push"
 
 If the above works, then you're successfully using GitHub through RStudio
 
@@ -176,14 +182,10 @@ Additional resources
 class: smaller
 
 - Source of info for much of this presentation: `happygitwithr.com`
-- For connecting to GitHub using SSH: `r-pkgs.had.co.nz/git.html`
-- Simple command line guide: `rogerdudler.github.io/git-guide`
 - GitHub Education (for free private repos): `education.github.com`
+- Simple command line guide: `rogerdudler.github.io/git-guide`
 - Recommended git clients (RStudio isn't great to use long-term)
     - GitKraken: `gitkraken.com`
     - SourceTree: `sourcetreeapp.com`
-- If you can't connect to GitHub through RStudio, use the command line:
-`happygitwithr.com/push-pull-github`
-
-
-> This presentation is available at `lucasnell.com/github_gsis`
+- This presentation is available at `lucasnell.com/github_gsis`
+- My email: `lucas@lucasnell.com`
